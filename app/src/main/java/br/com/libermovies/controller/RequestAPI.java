@@ -47,7 +47,6 @@ public class RequestAPI {
 
                     JSONArray search = response.getJSONArray("Search");
 
-                    // loop através de todos os contatos
                     for (int i = 0; i < search.length(); i++) {
 
                         JSONObject c = null;
