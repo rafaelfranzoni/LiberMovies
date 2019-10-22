@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBrancoDark"
+    tools:context=".view.BuscaFilmeActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_relative_layout">
+
+        <EditText
+            android:id="@+id/et_Search"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/btn_Find"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btn_Find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Buscar"
+            android:textColor="@color/colorAzul"
+            android:background="@drawable/rounded_button"
+            android:layout_alignParentRight="true"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sv_Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_relative_layout">
+
+                <Button
+                    android:id="@+id/btn_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00000000"
+                    android:textColor="#00000000"/>
+
+                <com.teleclinic.bulent.smartimageview.SmartImageViewLayout
+                    android:id="@+id/iv_Poster1"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    app:shape="CIRCLE"/>
+
+                <TextView
+                    android:id="@+id/tv_Name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_Poster1"
+                    android:layout_alignTop="@id/iv_Poster1"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Year1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Name1"
+                    android:layout_alignLeft="@id/tv_Name1"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Type1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Year1"
+                    android:layout_alignLeft="@id/tv_Year1"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/rl_1"
+                android:background="@drawable/rounded_relative_layout">
+
+                <Button
+                    android:id="@+id/btn_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00000000"
+                    android:textColor="#00000000"/>
+
+                <com.teleclinic.bulent.smartimageview.SmartImageViewLayout
+                    android:id="@+id/iv_Poster2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    app:shape="CIRCLE"/>
+
+                <TextView
+                    android:id="@+id/tv_Name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_Poster2"
+                    android:layout_alignTop="@id/iv_Poster2"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Year2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Name2"
+                    android:layout_alignLeft="@id/tv_Name2"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Type2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Year2"
+                    android:layout_alignLeft="@id/tv_Year2"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/rl_2"
+                android:background="@drawable/rounded_relative_layout">
+
+                <Button
+                    android:id="@+id/btn_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00000000"
+                    android:textColor="#00000000"/>
+
+                <com.teleclinic.bulent.smartimageview.SmartImageViewLayout
+                    android:id="@+id/iv_Poster3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    app:shape="CIRCLE"/>
+
+                <TextView
+                    android:id="@+id/tv_Name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_Poster3"
+                    android:layout_alignTop="@id/iv_Poster3"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Year3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Name3"
+                    android:layout_alignLeft="@id/tv_Name3"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Type3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Year3"
+                    android:layout_alignLeft="@id/tv_Year3"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/rl_3"
+                android:background="@drawable/rounded_relative_layout">
+
+                <Button
+                    android:id="@+id/btn_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00000000"
+                    android:textColor="#00000000"/>
+
+                <com.teleclinic.bulent.smartimageview.SmartImageViewLayout
+                    android:id="@+id/iv_Poster4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    app:shape="CIRCLE"/>
+
+                <TextView
+                    android:id="@+id/tv_Name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_Poster4"
+                    android:layout_alignTop="@id/iv_Poster4"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Year4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Name4"
+                    android:layout_alignLeft="@id/tv_Name4"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Type4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Year4"
+                    android:layout_alignLeft="@id/tv_Year4"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/rl_4"
+                android:background="@drawable/rounded_relative_layout">
+
+                <Button
+                    android:id="@+id/btn_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00000000"
+                    android:textColor="#00000000"/>
+
+                <com.teleclinic.bulent.smartimageview.SmartImageViewLayout
+                    android:id="@+id/iv_Poster5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    app:shape="CIRCLE"/>
+
+                <TextView
+                    android:id="@+id/tv_Name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_Poster5"
+                    android:layout_alignTop="@id/iv_Poster5"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Year5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Name5"
+                    android:layout_alignLeft="@id/tv_Name5"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Type5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Year5"
+                    android:layout_alignLeft="@id/tv_Year5"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/rl_5"
+                android:background="@drawable/rounded_relative_layout">
+
+                <Button
+                    android:id="@+id/btn_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00000000"
+                    android:textColor="#00000000"/>
+
+                <com.teleclinic.bulent.smartimageview.SmartImageViewLayout
+                    android:id="@+id/iv_Poster6"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    app:shape="CIRCLE"/>
+
+                <TextView
+                    android:id="@+id/tv_Name6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_Poster6"
+                    android:layout_alignTop="@id/iv_Poster6"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Year6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Name6"
+                    android:layout_alignLeft="@id/tv_Name6"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Type6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Year6"
+                    android:layout_alignLeft="@id/tv_Year6"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/rl_6"
+                android:background="@drawable/rounded_relative_layout">
+                <Button
+                    android:id="@+id/btn_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00000000"
+                    android:textColor="#00000000"/>
+
+                <com.teleclinic.bulent.smartimageview.SmartImageViewLayout
+                    android:id="@+id/iv_Poster7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    app:shape="CIRCLE"/>
+
+                <TextView
+                    android:id="@+id/tv_Name7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_Poster7"
+                    android:layout_alignTop="@id/iv_Poster7"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Year7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Name7"
+                    android:layout_alignLeft="@id/tv_Name7"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Type7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Year7"
+                    android:layout_alignLeft="@id/tv_Year7"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/rl_7"
+                android:background="@drawable/rounded_relative_layout">
+
+                <Button
+                    android:id="@+id/btn_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00000000"
+                    android:textColor="#00000000"/>
+
+                <com.teleclinic.bulent.smartimageview.SmartImageViewLayout
+                    android:id="@+id/iv_Poster8"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    app:shape="CIRCLE"/>
+
+                <TextView
+                    android:id="@+id/tv_Name8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_Poster8"
+                    android:layout_alignTop="@id/iv_Poster8"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Year8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Name8"
+                    android:layout_alignLeft="@id/tv_Name8"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Type8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Year8"
+                    android:layout_alignLeft="@id/tv_Year8"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/rl_8"
+                android:background="@drawable/rounded_relative_layout">
+
+                <Button
+                    android:id="@+id/btn_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00000000"
+                    android:textColor="#00000000"/>
+
+                <com.teleclinic.bulent.smartimageview.SmartImageViewLayout
+                    android:id="@+id/iv_Poster9"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    app:shape="CIRCLE"/>
+
+                <TextView
+                    android:id="@+id/tv_Name9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_Poster9"
+                    android:layout_alignTop="@id/iv_Poster9"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Year9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Name9"
+                    android:layout_alignLeft="@id/tv_Name9"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Type9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Year9"
+                    android:layout_alignLeft="@id/tv_Year9"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@id/rl_9"
+                android:background="@drawable/rounded_relative_layout">
+
+                <Button
+                    android:id="@+id/btn_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="#00000000"
+                    android:textColor="#00000000"/>
+
+                <com.teleclinic.bulent.smartimageview.SmartImageViewLayout
+                    android:id="@+id/iv_Poster10"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="10dp"
+                    app:shape="CIRCLE"/>
+
+                <TextView
+                    android:id="@+id/tv_Name10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_Poster10"
+                    android:layout_alignTop="@id/iv_Poster10"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Year10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Name10"
+                    android:layout_alignLeft="@id/tv_Name10"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/tv_Type10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_Year10"
+                    android:layout_alignLeft="@id/tv_Year10"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/colorFonte"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_Pagina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/rl_10"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/colorAzul"
+                android:textSize="15sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_Anterior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/rl_10"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rounded_button"
+                android:textColor="@color/colorAzul"
+                android:textSize="15sp"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

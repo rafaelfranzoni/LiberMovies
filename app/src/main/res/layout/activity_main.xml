@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBrancoDark"
+    tools:context=".view.MainActivity">
+
+    <ImageView
+        android:id="@+id/imagView_Logo"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/movie"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/lb_T1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textAlignment="center"
+        android:text="Busque um filme ou acesse seus favoritos."
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:layout_below="@id/imagView_Logo"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_SearchMovies"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lb_T1"
+        android:layout_marginTop="20dp"
+        android:text="Buscar Filmes"
+        android:background="@drawable/rounded_button"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_Favorites_Movies"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_SearchMovies"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button"
+        android:text="Acessar favoritos"
+        android:textSize="20sp"
+        android:textAllCaps="false"/>
+
+</RelativeLayout>

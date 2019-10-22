@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/sv_Detail"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".view.MovieDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_p1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.teleclinic.bulent.smartimageview.SmartImageViewLayout
+                android:id="@+id/iv_Poster"
+                android:layout_width="match_parent"
+                android:layout_height="710dp"
+                android:layout_margin="10dp"
+                app:shape="SQUARE"/>
+
+            <TextView
+                android:id="@+id/tv_TitleDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@id/iv_Poster"
+                android:textColor="@color/colorFonte"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_Time_seasons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_TitleDetail"
+                android:layout_below="@id/tv_TitleDetail"
+                android:textColor="@color/colorFonte"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_Language"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_alignLeft="@id/tv_Time_seasons"
+                android:layout_below="@id/tv_Time_seasons"
+                android:textColor="@color/colorFonte"
+                android:textSize="14sp"
+                android:textStyle="italic"/>
+
+            <ToggleButton
+                android:id="@+id/ib_Favorite"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/tv_TitleDetail"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:textOn=""
+                android:textOff=""/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_p2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/rl_p1">
+
+            <View
+                android:id="@+id/v_Linha"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:background="#c2c3c9" />
+
+            <TextView
+                android:id="@+id/tv_Plot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_below="@+id/v_Linha"
+                android:textColor="@color/colorFonte"
+                android:textSize="18sp"
+                android:textStyle="italic|bold"/>
+
+            <Button
+                android:id="@+id/btn_ProxFavo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_Plot"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorAzul"
+                android:background="@drawable/rounded_button"
+                android:textSize="15sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_AnteFavo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_Plot"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:textColor="@color/colorAzul"
+                android:background="@drawable/rounded_button"
+                android:textSize="15sp"
+                android:textAllCaps="false"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
